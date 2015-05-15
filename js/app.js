@@ -9,7 +9,7 @@
 
 // The names and URLs to all of the feeds we'd like available.
 var allFeeds = [
-    {
+  /*  {
         name: 'Udacity Blog',
         url: 'http://blog.udacity.com/feeds/posts/default?alt=rss'
     }, {
@@ -21,7 +21,7 @@ var allFeeds = [
     }, {
         name: 'Linear Digressions',
         url: 'http://feeds.feedburner.com/udacity-linear-digressions'
-    }
+    }*/
 ];
 
 /* This function starts up our application. The Google Feed
@@ -42,7 +42,7 @@ function init() {
  * which will be called after everything has run successfully.
  */
 function loadFeed(id, cb) {
-    var feedUrl = allFeeds[id].url,
+    var feedUurl = allFeeds[id].url,
         feedName = allFeeds[id].name,
         feed = new google.feeds.Feed(feedUrl);
 
