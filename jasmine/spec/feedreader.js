@@ -103,13 +103,18 @@
     /* TODO: Write a new test suite named "New Feed Selection"*/
 
    describe('New Feed Selection', function(){
-beforeEach(function(done){
-    loadFeeds(0,done);
-    setTimeout(function(){}, 3000);
-}); //close beforeEach
+     var content;
+     var newContent;
+      beforeEach(function(done){
+          content = $('.feed').html();
+          loadFeed(0,done);
+          setTimeout(function(){}, 3000);
+      }); //close beforeEach
       it('ensures the new feed is loaded and the content changes', function(){
-      });
-}); // close describe 'new feed selection'
+        newContent = $('.feed').html();
+            expect(content).not.toBe(newContent);
+      }); // close it 'ensures...'
+    }); // close describe 'new feed selection'
         /* TODO: Write a test that ensures when a new feed is loaded
          * by the loadFeed function that the content actually changes.
          * Remember, loadFeed() is asynchronous.
