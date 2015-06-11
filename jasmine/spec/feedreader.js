@@ -60,7 +60,7 @@
 
      it('ensures menu changes visibility when the menu icon is clicked', function(){
        $('.menu-icon-link').trigger('click');
-        expect($('body').hasClass('menu-hidden')).toBe(true);
+        expect($('body').hasClass('menu-hidden')).toBe(false);
         $('.menu-icon-link').trigger('click');
         expect($('body').hasClass('menu-hidden')).toBe(true);
       }); //close it 'ensures.....'
@@ -86,8 +86,8 @@
       }); //close beforeEach
 
       it("should have at least 1 entry", function(done){
-          expect($('.feed')).length.toBeGreaterThan(0);
-          expect($('.entry')).length.toBeGreaterThan(0);
+          expect($('.feed').length).toBeGreaterThan(0);
+          expect($('.entry').length).toBeGreaterThan(0);
           done();
       }); //close it 'should...'
 
@@ -107,11 +107,13 @@
      var newContent;
       beforeEach(function(done){
           content = $('.feed').html();
-          loadFeed(0,done);
+          loadFeed(0);
+          loadFeed(1, done);
           setTimeout(function(){}, 3000);
       }); //close beforeEach
       it('ensures the new feed is loaded and the content changes', function(){
         newContent = $('.feed').html();
+    //    loadFeed(0,done);
             expect(content).not.toBe(newContent);
       }); // close it 'ensures...'
     }); // close describe 'new feed selection'
