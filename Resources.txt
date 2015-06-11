@@ -15,3 +15,6 @@ http://discussions.udacity.com/t/issue-in-my-code-for-step-8/14685/9
 http://discussions.udacity.com/t/step-13-help-initial-entries/14839/14
 http://discussions.udacity.com/t/how-to-call-html-css-elements-in-11/19886/8
 http://discussions.udacity.com/t/step-16-write-a-test-that-ensures-when-a-new-feed-is-loaded-by-the-loadfeed-function-that-the-content-actually-changes/20810/9
+
+http://stackoverflow.com/questions/21726469/beforeall-and-afterall-in-javascript-test-cases
+https://api.jquery.com/empty/
