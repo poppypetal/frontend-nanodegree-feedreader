@@ -7,3 +7,11 @@ https://api.jquery.com/click/
 http://www.w3schools.com/jsref/met_win_settimeout.asp
 http://code.tutsplus.com/tutorials/testing-your-javascript-with-jasmine--net-21229
 https://www.snip2code.com/Snippet/54505/Dry-Jasmine--it--blocks-in-forEach
+
+Help from udacity coaches/fellow students questions for reference:
+http://discussions.udacity.com/t/step-16-loadfeed-allfeeds-not-defined/21652/3
+http://discussions.udacity.com/c/nd001-2014-12-03/project-6
+http://discussions.udacity.com/t/issue-in-my-code-for-step-8/14685/9
+http://discussions.udacity.com/t/step-13-help-initial-entries/14839/14
+http://discussions.udacity.com/t/how-to-call-html-css-elements-in-11/19886/8
+http://discussions.udacity.com/t/step-16-write-a-test-that-ensures-when-a-new-feed-is-loaded-by-the-loadfeed-function-that-the-content-actually-changes/20810/9
